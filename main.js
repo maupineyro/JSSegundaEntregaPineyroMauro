@@ -56,6 +56,7 @@ function altaAlumnoPandemia() {
     let alumno = new Alumno(apellido, nombre, curso, dni, calificacion);
     arrayAlumnosPandemia.push(alumno); //push va agregar el nuevo alumno al array que almacena
     console.log(arrayAlumnosPandemia);
+    alert("el alumno ha sido dado de alta satisfactoriamente");
 }
 
 // Opción 2: Dar baja a un alumno que adeuda materias del 2020
@@ -66,6 +67,7 @@ function bajaAlumnoPandemia() {
     let indice = arrayAlumnosPandemia.indexOf(alumno); // con el index se va a "posicionar" en el alumno que coincida el dni
     arrayAlumnosPandemia.splice(indice, 1);
     console.log(arrayAlumnosPandemia);
+    alert("el alumno ha sido dado de baja satisfactoriamente");
 }
 
 // Opción 3: Modificar datos de un alumno cargado
@@ -81,6 +83,7 @@ function modificarAlumnoPandemia() {
     let alumnoModificado = new Alumno(apellido, nombre, curso, dni, calificacion);
     arrayAlumnosPandemia.splice(indice, 1, alumnoModificado);
     console.log(arrayAlumnosPandemia);
+    alert("los datos del alumno han sido modificados");
 }
 
 // Opción 4: Consultar datos de alumno 
@@ -89,6 +92,7 @@ function consultaAlumno() {
     let dni = parseInt(prompt("Ingrese el dni del alumno: "));
     let alumno = arrayAlumnosPandemia.find(alumno => alumno.dni === dni);
     console.log(alumno);
+    alert("ver datos en consola");
 }
 
 
