@@ -117,7 +117,7 @@ function salir() {
 }
 
 
-// Ejecutar programa
+// Ejecutar programa.
 
 let opcion = menu();
 switch (opcion) {
